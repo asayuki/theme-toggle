@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width; initial-scale=1.0" />
+    <style>
+      [data-theme="light"] {
+          --color-bg: #FFFFFF;
+          --color-fg: #000000;
+      }
+
+      [data-theme="dark"] {
+          --color-bg: #000000;
+          --color-fg: #FFFFFF;
+      }
+
+      body {
+        background-color: var(--color-bg);
+        color: var(--color-fg);
+      }
+    </style>
+  </head>
+  <body>
+    <theme-toggle></theme-toggle>
+    <script type="module" src="theme-toggle.js"></script>
+  </body>
+</html>
